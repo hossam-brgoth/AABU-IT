@@ -1,0 +1,159 @@
+<!--
+  Generated template for the AvgPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-header dir="rtl">
+
+
+  <ion-navbar color='secondary'>
+
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+
+    <ion-title><ion-icon name="calculator" item-left></ion-icon>
+      احسب معدلك</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding dir="rtl">
+
+  <ion-grid>
+
+<ion-row style="text-align:center;">
+    <ion-col col-6><h4>علامة المادة</h4></ion-col>
+    <ion-col col-6><h4>عدد ساعاتها</h4></ion-col>
+</ion-row>
+
+
+<ion-row class='row-1'>
+
+<ion-col col-6>
+         <input onfocus="this.value=''" type="number" [(ngModel)]="num[0]"/>
+</ion-col>
+
+<ion-col col-6>
+<input onfocus="this.value=''" type="number" [(ngModel)]="time[0]"/>
+</ion-col>
+
+</ion-row>
+
+
+<ion-row class='row-2'>
+  
+  <ion-col col-6>
+           <input onfocus="this.value=''" type="number" [(ngModel)]="num[1]"/>
+  </ion-col>
+  
+  <ion-col col-6>
+    <input onfocus="this.value=''" type="number" [(ngModel)]="time[1]"/>
+  </ion-col>
+  
+  </ion-row>
+
+
+  <ion-row class='row-3'>
+    
+    <ion-col col-6>
+             <input onfocus="this.value=''" type="number" [(ngModel)]="num[2]"/>
+    </ion-col>
+    
+    <ion-col col-6>
+    <input onfocus="this.value=''" type="number" [(ngModel)]="time[2]"/>
+    </ion-col>
+    
+    </ion-row>
+
+
+    <ion-row class='row-4'>
+      
+      <ion-col col-6>
+               <input onfocus="this.value=''" type="number" [(ngModel)]="num[3]"/>
+      </ion-col>
+      
+      <ion-col col-6>
+          <input onfocus="this.value=''" type="number" [(ngModel)]="time[3]"/>
+      </ion-col>
+      
+      </ion-row>
+
+
+      <ion-row class='row-5'>
+        
+        <ion-col col-6>
+                 <input onfocus="this.value=''" type="number" [(ngModel)]="num[4]"/>
+        </ion-col>
+        
+        <ion-col col-6>
+         <input onfocus="this.value=''" type="number" [(ngModel)]="time[4]"/>
+        </ion-col>
+        
+        </ion-row>
+
+
+        <ion-row class='row-6' >
+          
+          <ion-col col-6 >
+                   <input onfocus="this.value=''" type="number" [(ngModel)]="num[5]"/>
+          </ion-col>
+          
+          <ion-col col-6>
+<input onfocus="this.value=''" type="number" [(ngModel)]="time[5]"/>
+          </ion-col>
+          </ion-row>
+          
+<ion-row class="row-7">
+<ion-col col-12>
+
+    <ion-card color='dark'  style="border-radius:20px;">
+          <ion-card-content style="font-size:20px;">
+              معدلك الفصلي: <b>{{ calcAvg() }}%</b>
+          </ion-card-content>
+        
+        </ion-card>
+
+</ion-col>
+</ion-row>
+
+<h5>لحساب المعدل التراكمي يجب إدخال المعدل التراكمي السابق وعدد الساعات التراكمية السابقة</h5>
+
+<ion-row class='row-8'>
+  
+  <ion-col col-6>
+      المعدل التراكمي السابق:  <input onfocus="this.value=''" type="number" [(ngModel)]="preAvg"/>      
+  </ion-col>
+
+  <ion-col col-6>
+    الساعات التراكمية السابقة:  <input onfocus="this.value=''" type="number" [(ngModel)]="preHours"/>      
+  </ion-col>
+
+</ion-row>
+
+
+<ion-row class='row-9'>
+
+
+<ion-col col-12>
+    <ion-card color='dark'  style="border-radius:20px;">
+        
+          <ion-card-content style="font-size:20px;">
+             معدلك التراكمي: <b>{{calcTotalAvg()}}%
+              </b> 
+          </ion-card-content>
+        </ion-card>
+</ion-col>
+
+</ion-row>
+
+  </ion-grid>
+
+
+  
+  
+
+</ion-content>
