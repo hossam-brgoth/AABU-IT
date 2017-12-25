@@ -18,12 +18,12 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 //import * as firebase from 'firebase';
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyBwjWy4flc3fuGI_OvQt7Z4sy3HlfYOMa0",
-    authDomain: "ionic3db-60cd0.firebaseapp.com",
-    databaseURL: "https://ionic3db-60cd0.firebaseio.com",
-    projectId: "ionic3db-60cd0",
-    storageBucket: "ionic3db-60cd0.appspot.com",
-    messagingSenderId: "223005323454"
+  apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: ""
 };
 
 
